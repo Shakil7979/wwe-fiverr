@@ -1,0 +1,465 @@
+@font-face {
+  font-family: "Lab Grotesque bold";
+  src: url("../fonts/LabGrotesque-Bold.woff") format("woff2"),
+    url("../fonts/LabGrotesque-Bold.woff2") format("woff");
+  font-weight: 700;
+  font-style: bold;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Lab Grotesque Med";
+  src: url("../fonts/LabGrotesque-Medium.woff") format("woff2"),
+    url("../fonts/LabGrotesque-Medium.woff2") format("woff");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Lab Grotesque reg";
+  src: url("../fonts/LabGrotesque-Regular.woff") format("woff2"),
+    url("../fonts/LabGrotesque-Regular.woff2") format("woff");
+  font-weight: 400;
+  font-display: swap;
+}
+
+/*********************************/
+/***********1.GLOBAL CSS*********/
+/********************************/
+
+body {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  font-size: 1.6rem;
+  font-family: "Lab Grotesque reg";
+}
+html {
+  /*font-size: 62.5%;*/
+  line-height: 25px;
+  line-height: 2.5rem;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+  padding: 0;
+}
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  display: inline-block;
+}
+.section-padding {
+  padding: 70px 0;
+}
+h3{
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 130%; 
+    color: #232429;
+}
+
+/*********************************/
+/***********2.GLOBAL CSS**********/
+/********************************/
+.header.header-area {
+	border-bottom: 1px solid #ddd;
+}
+.custom_search {
+	border: none;
+	border-left: 1px solid #ddd;
+	padding: 14px; 
+}
+.custom_search_btn {
+	padding: 14px;
+	border: none !important;
+	border-right: 1px solid #ddd !important;
+	border-left: 1px solid #ddd !important;
+}
+.nav li a {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: #67748e;
+}
+.dropdown_menu { 
+	z-index: 9999;
+}
+.mobile_menu {
+	position: absolute;
+	background: #232429;
+	padding: 20px;
+	right: 0;
+	width: 100%;
+  display: none;
+}
+.nav li {
+  margin: 0 10px;
+}
+.mobile_menu {
+	position: absolute;
+	background: #232429;
+	padding: 20px;
+	right: 0;
+	width: 100%;
+	display: none;
+	top: 0;
+	/* padding-top: 62px; */
+	z-index: 9;
+}
+#mobile_icon_bars {
+	position: relative;
+	z-index: 99;
+	display: none;
+}
+.nav_btn {
+  font-family: "Lab Grotesque";
+  background: #0057ff;
+  padding: 8px 20px;
+  color: #fff !important;
+  border-radius: 5px;
+}
+.custom_search_btn2,
+.custom_search_btn {
+  background: transparent;
+  border: none;
+  border-top: 1px solid #ced4da;
+  border-right: 1px solid #ced4da;
+  border-bottom: 1px solid #ced4da;
+}
+.custom_search_btn2{  
+    border: none; 
+    border-top: 1px solid #ced4da;
+    border-left: 1px solid #ced4da;
+    border-bottom: 1px solid #ced4da; 
+}
+.custom_search_btn:hover {
+	background: transparent;
+    border: none;
+    border-top: 1px solid #ced4da;
+    border-right: 1px solid #ced4da;
+    border-bottom: 1px solid #ced4da;
+}
+.custom_search_btn2:hover{
+	background: transparent;   
+    border: none; 
+    border-top: 1px solid #ced4da;
+    border-left: 1px solid #ced4da;
+    border-bottom: 1px solid #ced4da;
+}
+/* .custom_search2{ 
+    border-left: 1px solid transparent;
+}
+.custom_search{
+    border-right: 1px solid transparent;
+} */
+.input-group {
+  align-items: center;
+}
+.searc_text {
+  margin-left: 10px !important;
+  display: block;
+}
+
+/*********************************/
+/*********** BANNER CSS**********/
+/********************************/
+
+.banner_item_img {
+  width: 250px;
+  height: 100px; 
+}
+.banner_item_img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+.banner_right {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: center;
+	gap: 15px;
+}
+.banner-left h2 {
+  font-weight: 700;
+  font-size: 35px;
+  line-height: 100.5%;
+  color: #232429;
+  width: 100%;
+}
+.banner-left p {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 130%;
+  color: #67748e;
+  margin-top: 5px;
+}
+
+/*********************************/
+/*********** BANNER CSS**********/
+/********************************/
+.main-menu-area {
+	background: #dfdfdf; 
+}
+.tiered-menu { 
+	background: #eee;
+	position: relative;
+	margin-top: 15px;
+}
+
+.tiered-menu a {
+	padding: 8px 0;
+	width: 100%;
+	font-size: 16px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	color: #232429;
+	border-top: 1px solid #dfdfdf;
+	background: transparent !important;
+}
+
+/* Display Dropdowns on Hover */
+.nav li {
+  position: relative;
+}
+
+/* Hide Dropdowns by Default */
+.dropdown_menu {
+	display: none;
+	position: absolute;
+	top: 38px;
+	background: #fff;  
+	border: 2px solid #ddd;
+}
+.dropdown_menu li a:hover { 
+	color: #0057FF;
+}
+ 
+.nav li:hover .dropdown_menu{
+  color: red;
+  display: block;
+}
+	
+/* Fisrt Tier Dropdown */
+.nav .dropdown_menu li {
+	width:170px;
+	float:none;
+	display:list-item;
+	position: relative;
+}
+
+.collapsible {
+  width: 300px;
+}
+
+.collapsible a {
+	color: #333;
+	text-indent: 20px;
+	background: #ddd;
+	width: 80%;
+}
+
+.collapsible .collapsible a {
+  color: #333;
+  background: #eeeeee; /* Old browsers */
+  text-indent: 40px;
+}
+
+.collapsible .collapsible .collapsible a {
+  text-indent: 60px;
+}
+
+.menu-box{
+    background: #fff;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px #ddd;
+} 
+.input_group_custom{
+    position: relative;
+}
+.custom_search_btn2 {
+	border: none; 
+	position: absolute !important;
+	background: transparent;
+}
+.form-control.custom_search2 {
+	padding: .375rem 2.75rem .375rem 2.375rem; 
+	background: #dfdfdf;
+	width: 100%;
+	border-radius: 10px; 
+}
+.main-gold {
+	display: flex;
+	justify-content: space-between;
+}
+.list-item {
+	display: flex;
+	align-items: flex-start;
+	gap: 14px;
+}
+.custom-tag p {
+	font-size: 16px;
+	line-height: 20px;
+	color: #67748E;
+	margin-right: 17px;
+}
+.gold-check-text h3 { 
+	font-size: 20px; 
+}
+.custom-btn-success {
+	padding: 0px 10px;
+	font-size: 13px;
+}
+.gold-check {
+	margin-top: -8px;
+}
+.gold-check p {
+	font-size: 14px;
+	line-height: 20px;
+	color: #FFAA5B;
+	text-align: center;
+	font-weight: 500;
+	margin-top: -5px;
+}
+.cat_item a {
+	font-size: 16px;
+	line-height: 20px;
+	color: #232429;
+	padding: 6px 18px;
+	border: 2px solid #ddd;
+	margin: 5px;
+	border-radius: 15px;
+    transition: 0.3s;
+}
+.custom_border{
+    border: 2px solid #ddd;
+}
+.cat_item a:hover {
+	background: #198754;
+	color: #fff;
+}
+.pin-gold p {
+	font-size: 14px;
+	line-height: 18px;
+	color: #0057FF;
+}
+.border-btm{
+    border-bottom: 2px solid #ddd;
+}
+.gold-items{
+    padding: 20px;
+}
+.main-menu-area.section-padding{
+    padding: 20px 0;
+} 
+
+
+/*********************************/
+/******** TOPIC AREA CSS ********/
+/********************************/
+
+.topic-main-area {
+	background: #dfdfdf; 
+}
+.topic_profile{
+  text-align: center;
+}
+.topic_info p {
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 20px;
+	color: #67748E;
+}
+.topic_info {
+  margin-bottom: 10px;
+}
+.topic_profile img{
+  width: 100%;
+  height: 100%;
+}
+.topic_ul li p {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+.topic_ul li p b {
+	font-weight: 700;
+	font-size: 16px;
+	line-height: 130%;
+	color: #232429;
+}
+.topic_ul li p span{
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px; 
+  color: #232429;
+}
+.topic_ul {
+	margin: 20px 0;
+}
+.topic_ul li {
+	border-bottom: 1px solid #ddd; 
+	padding: 8px 0;
+}
+
+.user_info_btn img {
+	width: 16px;
+}
+.user_info_btn p{
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px; 
+  color: #67748E;
+  margin-left: 4px;
+}
+.user_info_btn {
+	display: flex;
+	align-items: center;
+	background: #dfdfdf;
+	margin-bottom: 10px;
+	padding: 8px 12px;
+	border-radius: 10px;
+  border: 1px solid rgb(218, 218, 218);
+} 
+.user_info_btn p.active,
+.user_info_btn:hover p{
+  text-decoration: underline;
+} 
+.topic_img img {
+	width: 100%;
+}
+.border_btm{
+  border-bottom: 1px solid rgb(211, 211, 211); 
+}
+.topic_img.extend_img_box img { 
+	margin: 30px 0;
+}
+.footer_text_box h3 {
+	color: #00AA01;
+}
+.footer_link a {
+	font-size: 22px;
+	color: #232429;
+  text-decoration: underline;
+}
+.footer_text_box p {
+	font-size: 14px;
+  color: #67748E;
+}
+.custom_card {
+	border-radius: 15px;
+	border: 2px solid #dbdbdd;
+}
