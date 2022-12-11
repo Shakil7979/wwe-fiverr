@@ -47,6 +47,12 @@
         line-height: 12px; 
         padding: 5px 10px; 
     }
+    .card.custom_border {
+        margin-top: 20px;
+    }
+    .custom_card { 
+        margin-top: 20px;
+    }
 }
 
 @media all and (max-width:576px){

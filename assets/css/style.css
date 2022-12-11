@@ -78,6 +78,7 @@ h3{
 	border-left: 1px solid #ddd;
 	padding: 14px;
 	width: 336px;
+	font-family: var(--bs-font-sans-serif) !important;
 }
 .custom_search_btn {
 	padding: 14px;
@@ -199,11 +200,11 @@ h3{
 }
 .banner-left h2 {
 	font-weight: 700;
-	font-size: 35px;
+	font-size: 30px;
 	line-height: 100.5%;
 	color: #232429;
 	width: 100%;
-	font-family: "Lab Grotesque bold";
+	font-family: var(--bs-font-sans-serif) !important;
 }
 .banner-left p {
   font-weight: 400;
@@ -236,8 +237,8 @@ h3{
 	font-size: 15px; 
 }
 .main_menu_search_box h3 {
-	font-family: "Lab Grotesque bold";
-	margin-bottom: 8px; 
+	font-family: var(--bs-font-sans-serif) !important;
+	margin-bottom: 8px;
 }
 
 /* Display Dropdowns on Hover */
@@ -350,7 +351,7 @@ h3{
 	color: #232429;
 	padding: 2px 8px;
 	border: 1px solid #ddd;
-	margin: 5px;
+	margin-right: 5px;
 	border-radius: 15px;
 	transition: 0.3s;
 }
