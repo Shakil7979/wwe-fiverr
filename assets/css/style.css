@@ -567,6 +567,7 @@ h3 {
   width: 1em;
   text-align: center;
   flex: 1 0 1em;
+  font-weight: 700;
 }
 .auth2_form input[type="submit"] {
   margin-left: auto;
